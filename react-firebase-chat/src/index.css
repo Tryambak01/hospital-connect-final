@@ -1,0 +1,54 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body{
+  display: flex;
+  background-image: url("bg.jpg");
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+}
+
+.container {
+  width: 90vw;
+  height: 90vh;
+  background-color: rgba(17, 25, 40, 0.75);
+  backdrop-filter: blur(19px) saturate(150%);            /*creates a blur affect*/
+  border-radius: 12px;
+  border : 1px solid rgba(2, 8, 20, 0.75);
+  display: flex;
+  background-size: cover;
+  z-index: 0;
+}
+
+.loading {
+  padding: 50px;
+  font-size: 36px;
+  border-radius: 10px;
+  background-color: rgba(17, 25, 40, 0.9);
+  z-index: 0;
+}
+
+.videoCall {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.LandingPage {
+  z-index: 0;
+}
+
+.root {
+  z-index: -1;
+}

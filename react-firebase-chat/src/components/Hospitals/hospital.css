@@ -1,0 +1,29 @@
+html, body {
+    height: 100%; /* Ensure the html and body take full height */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.bello {
+    margin-left: -20px; /* Move it 20px to the left */
+    display: block;
+    margin-right: auto; /* This ensures the element is aligned to the left */
+    transform: translateX(-20px); /* Another layer of left adjustment if needed */
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    color: #007bff;
+}
+
+
